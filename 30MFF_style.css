@@ -1,0 +1,67 @@
+/* class to give attributes to the header */
+.header_bar {
+    background-color: #f7e7ce;
+    width: 100%;                  /* so it spans the whole page */  
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;                /* to expand items to fill free space */  
+    z-index: 1;                   /* to make sure it stays on top of everything else*/  
+}
+
+/* class to give attributes to the division containing the videos and video description */
+.vid_container {
+    position: relative;
+}
+
+/* class to give attributes to the 30mff video */
+.mdlr_video1 {
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    /* The original video is 402x720px. It has been multiplied by 0.5 (50% of original size)*/
+    width: 201px;
+    height: 360px;
+    filter:grayscale(100%);         /* to add a grayscale filter */
+}
+
+.mdlr_video2 {
+    position: absolute;
+    top: 80px;
+    left: 291px;
+    width: 201px;
+    height: 360px;
+    filter:grayscale(25%);         /* to add a grayscale filter but just very slightly (fits better with the color theme) */
+}
+
+.mdlr_video3 {
+    position: absolute;
+    top: 80px;
+    left: 492px;
+    width: 201px;
+    height: 360px;
+    filter:grayscale(100%);         /* to add a grayscale filter */
+}
+
+/* class to give attributes to the description box */
+.description {
+    color: rgb(14, 14, 14);
+    font-size: 1.2em;
+    position: absolute;
+    top: 467px;
+    left: 90px;
+    width: 595px;
+    height: 140px;
+    padding: 5px;
+    text-align: justify;
+}
+
+/* class to position and size the baby yoda image */
+.mdlr_image {
+    position: relative;
+    top: 70px;
+    left: 765px;
+    width: 620px;
+}

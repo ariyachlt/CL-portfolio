@@ -1,0 +1,42 @@
+/* Setting the main parameters for the html and body */
+html, body {
+    min-width: 960px;                                   /* limit minimum window size */
+    margin: 0;                                          /* remove margins */
+    height: 100%;                                       /* set height to fill the screen */
+    font-family: Raleway;                               /* setting font family */
+    background-color: rgb(247, 244, 236);             /* setting background color */
+}
+
+/* ID for page div */
+#page {
+    position: relative;                                 /* setting div position */
+}
+
+/* ID for main box div */
+#main_box {
+    position: absolute;                                 /* setting div absolute within the page div */
+    width: 58%;                                         /* limiting width */
+    padding: 10%;                                       /* add padding */
+    transform: translate(-5%,-5%);                      /* transform to move div into position */
+}
+
+/* ID for main text in main box div */
+#main_text {
+    font-size: 34px;                                    /* setting an absolute font size (don't want it to shrink when rezising window) */
+    font-weight: 200;                                   /* setting the weight of the font */
+    color: rgb(34, 34, 34);                           /* setting the color of the font to very dark grey */
+}
+
+a {
+    color: rgb(34, 34, 34);                           /* setting the color of all the links to very dark grey */
+}
+
+a:hover {
+    cursor: pointer;                                    /* show pointer cursor upon hovering on links */
+}
+
+#image {
+    position: relative;                                 /* set image position relative to main box with text */
+    width: 28%;                                         /* set image size */
+    transform: translate(233%,35%);                     /* transform image to move ineto position */
+}
